@@ -17,7 +17,8 @@
 :root {
     --main-color:#D0B376;
     --second-color:#FFF;
-    --header-btn-color:#232E31;
+    /*--header-btn-color:#232E31;*/
+    --header-btn-color:#404D51;
     --menu-background-color:rgba(20, 23, 23, 0.8);
 
     --default-font-size:18px;
@@ -30,8 +31,25 @@
 .pl-15{
     padding-left: 15px!important;
 }
-.mg-30{
+.mt-100{
+    margin-top: 100px!important;
+}
+.mt-30{
     margin-top: 30px!important;
+}
+.no-padding{
+    padding: 0!important;
+}
+.margin-lr{
+    margin: 0 auto 0 auto!important;
+}
+.margin-none{
+    margin: 0!important;
+}
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .btn{
     background:var(--main-color);
@@ -53,4 +71,254 @@
     filter: drop-shadow(0px 0px 2px #D0B376);
     transform: scale(1.05);
 }
+.content__block-btn{
+    margin-top: 20px!important;
+}
+.main-btn{
+    height: 40px !important;
+    font-weight: 500 !important;
+    color: #FFF!important;
+    text-transform: uppercase!important;
+}
+.content__block{
+    width: 965px;
+    margin: auto;
+    font-family: 'Inter';
+    margin-top: 100px;
+}
+.content__block-title{
+    font-size: 40px;
+    color: var(--main-color);
+    max-width: 550px;
+}
+.content__block-text{
+    font-size: 18px;
+    max-width: 520px;
+    line-height: 25px;
+}
+/* Представление */
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.introduction-image{
+    height: 270px;
+}
+.introduction-text{
+    display: flex;
+    flex-direction: column;
+}
+/* Каталог */
+.clothes__catalog{
+    display: grid;
+    grid-template-areas:
+        "first main third"
+        "second main fourth";
+    justify-content: space-evenly;
+}
+.clothes__catalog-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.clothes__catalog-position img{
+    height: 200px;
+}
+.clothes__catalog-main_position img{
+    height: 500px;
+    grid-area: main;
+}
+.clothes__catalog-main_position{
 
+}
+.clothes__catalog__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 260px;
+    text-align: center;
+}
+.clothes__catalog__text-name{
+    font-family: 'Cormorant';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.clothes__catalog__text-desc{
+    font-family: 'Cormorant';
+    font-size: 18px;
+}
+.clothes__catalog__text-price{
+    margin-top: 5px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+}
+.clothes__catalog-position:nth-child(1){
+    grid-area: first;
+}
+.clothes__catalog-position:nth-child(2){
+    grid-area: second;
+}
+.clothes__catalog-position:nth-child(3){
+    grid-area: third;
+}
+.clothes__catalog-position:nth-child(4){
+    grid-area: fourth;
+}
+.clothes__catalog-main_position{
+    grid-area: main;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* Ткани*/
+.fabric__main{
+
+}
+.fabric__main-text{
+    max-width: 100%!important;
+}
+.fabric__main{
+
+}
+.fabric__main-btn{
+    height: 35px!important;
+    max-width: 120px!important;
+    font-size: 20px!important;
+    font-weight: 600!important;
+    margin: 0px 10px 0px 10px;
+    background: #C6C1B963!important;
+    padding: 20px!important;
+    font-family: 'Cormorant'!important;
+    color: #4B6A73!important;
+}
+.fabric__main-menu{
+    display: flex;
+    justify-content: normal;
+    margin-top: 30px;
+    border-radius: 0px!important;
+}
+.fabric__catalog{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.fabric__catalog-card{
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+.fabric__catalog-card img{
+    width: 170px;
+    height: 170px;
+}
+    /* Пошив */
+.poshiv__plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.poshiv__plan__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.poshiv__plan__block img{
+    height: 170px;
+    width: 170px;
+    border: double 4px var(--main-color);
+}
+.poshiv__plan__block-name{
+    margin-top: 15px;
+    font-family: 'Cormorant';
+    font-size: var(--default-big-font-size);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.poshiv__plan__block-desc{
+    margin-top: 15px;
+    max-width: 225px;
+}
+/* Контакты */
+.contacts__info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contacts__info-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contacts__info svg{
+    margin-right: 15px;
+    width: 30px;
+}
+.contacts-worktime{
+    max-width: 130px;
+    line-height: 30px;
+    right: 0;
+    position: absolute;
+}
+/* Контакты - карта */
+.contacts-map{
+    display: flex;
+    justify-content: center;
+}
+.contacts-map img{
+    margin-top: 15px;
+    width: 1100px;
+}
+/* Футер */
+.footer__wrapper{
+    height: 300px;
+    background-color: var(--menu-background-color);
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.footer__block{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer__block__social_and_logo{
+
+}
+.footer__block__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footer__block__wrapper-logo{
+    max-width: 250px;
+}
+.footer__block-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: #F1F4FB;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--default-font-size);
+    line-height: 23px;
+    font-family: 'Inter';
+    gap: 20px;
+    max-width: 350px;
+}
