@@ -114,8 +114,8 @@
 .clothes__catalog{
     display: grid;
     grid-template-areas:
-        "first main third"
-        "second main fourth";
+        "first main second"
+        "third main fourth";
     justify-content: space-evenly;
 }
 .clothes__catalog-position{
@@ -148,10 +148,14 @@
     font-weight: 600;
     font-size: 24px;
     margin-bottom: 5px;
+    /* new */
+    max-width: 200px;
 }
 .clothes__catalog__text-desc{
     font-family: 'Cormorant';
     font-size: 18px;
+    /* new */
+    max-width: 200px;
 }
 .clothes__catalog__text-price{
     margin-top: 5px;

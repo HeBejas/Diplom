@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('suits', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique();
             $table->text('description')->nullable();
-            $table->decimal('price', 9, 0);
+            $table->integer('price');
             $table->timestamps();
         });
     }
